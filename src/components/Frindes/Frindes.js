@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Badge, Space, Typography } from 'antd';
 
 import avatarPic from '../../assets/avatar.png';
-import classes from './Frindes.module.css';
+import './Frindes.css';
 
 const { Title } = Typography;
 
@@ -31,12 +31,12 @@ const frindes = [
 ];
 
 const Frindes = () => (
-  <section className={classes.main}>
+  <section className="main">
     <Title level={4} style={{ fontWeight: '700' }}>
       Friends
     </Title>
 
-    <Space size="small" className={classes.frindes}>
+    <Space size="small" className="frindes">
       {frindes.map((frinde, inedx) =>
         frinde.online ? (
           <Badge offset={[-5, 10]} dot color="#8BC747" key={inedx}>

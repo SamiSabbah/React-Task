@@ -4,7 +4,7 @@ import { Avatar, Button, Divider, Input, Space, Typography } from 'antd';
 import logo from '../../assets/vverse.png';
 import photoIcon from '../../assets/photoIcon.png';
 import avatarPic from '../../assets/avatar.png';
-import classes from './CreatePost.module.css';
+import './CreatePost.css';
 
 const { Text } = Typography;
 
@@ -12,8 +12,8 @@ const CreatePost = () => {
   const [postInput, setPostInput] = useState('');
 
   return (
-    <section className={classes.main}>
-      <div className={classes.top}>
+    <section className="main">
+      <div className="top">
         <Space align="center">
           <Text type="secondary">
             <img width={16} src={logo} alt="logo" /> Dimension
@@ -30,11 +30,11 @@ const CreatePost = () => {
 
       <Divider />
 
-      <div className={classes.bottom}>
+      <div className="bottom">
         <Avatar size={40} src={avatarPic} />
-        <form className={classes.form}>
+        <form className="form">
           <Input
-            className={classes.postInput}
+            className="postInput"
             value={postInput}
             onChange={(e) => setPostInput(e.target.value)}
             placeholder="Try mix reality lens"
