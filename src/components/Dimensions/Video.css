@@ -1,0 +1,52 @@
+.video {
+  position: relative;
+  width: 360px;
+  height: 220px;
+  background: rgb(157, 157, 157);
+  background: linear-gradient(
+    357deg,
+    rgba(157, 157, 157, 1) 0%,
+    rgba(241, 241, 243, 1) 100%
+  );
+  border-radius: 8px;
+}
+
+.live {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: red;
+  padding: 0px 10px;
+  border-radius: 2rem;
+}
+
+.stats {
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  width: 90%;
+}
+
+.statNumber {
+  display: flex;
+  align-items: center;
+}
+
+.statNumber span {
+  margin-right: 12px;
+}
+
+.statNumber svg {
+  margin-right: 8px;
+}
+
+.white {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .video {
+    width: 330px;
+  }
+}
